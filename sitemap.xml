@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://alemos.dev/about/</loc>
+    <lastmod>2019-05-31T16:29:12-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alemos.dev/</loc>
     <priority>0</priority>
   </url>
