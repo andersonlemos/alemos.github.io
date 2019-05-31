@@ -3,22 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://alemos.dev/about/</loc>
+    <loc>/</loc>
+    <lastmod>2019-05-31T16:29:31-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/first-post/</loc>
+    <lastmod>2019-05-31T16:29:31-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2019-05-31T16:29:31-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
     <lastmod>2019-05-31T16:29:12-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alemos.dev/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://alemos.dev/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://alemos.dev/tags/</loc>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
