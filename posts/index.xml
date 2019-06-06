@@ -5,18 +5,22 @@
     <link>/posts/</link>
     <description>Recent content in Posts on Dev Files</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 31 May 2019 16:29:31 -0300</lastBuildDate>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 06 Jun 2019 11:14:39 -0300</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Firstpost</title>
-      <link>/posts/first-post/</link>
-      <pubDate>Fri, 31 May 2019 16:29:31 -0300</pubDate>
+      <title>Instalando e configurando HUGO</title>
+      <link>/posts/instalando-e-configurando-hugo/</link>
+      <pubDate>Thu, 06 Jun 2019 11:14:39 -0300</pubDate>
       
-      <guid>/posts/first-post/</guid>
-      <description></description>
+      <guid>/posts/instalando-e-configurando-hugo/</guid>
+      <description>Quem é esse tal de HUGO? De acordo com o site oficial do projeto:
+ &amp;ldquo;Hugo é um dos mais populares geradores de sites estáticos de código aberto. Com sua incrível velocidade e flexibilidade, Hugo torna a construção de sites mais divertidos novamente.&amp;rdquo;
+ Alguns dos seus benefícios são:
+ Tempo de construção (build) extremamente baixo (&amp;lt;1 ms por página) Multiplataforma Suporte nativo a Markdown Suporte integrado ao Google Analytics  Pré requisitos de instalação:</description>
     </item>
     
   </channel>

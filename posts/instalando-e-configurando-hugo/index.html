@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+				Instalando e configurando HUGO &middot; Dev Files
+		</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Dev Files" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Dev Files</h2>
+				</a>
+				<ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/">Posts</a></li>
+</ul> 
+				
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Anderson Lemos
+        <br>
+        <span>on&nbsp;</span><time datetime="2019-06-06 11:14:39 -0300 -03">June 6, 2019</time>
+</div>
+		<h1 class="post-title">Instalando e configurando HUGO</h1>
+<div class="post-line"></div>
+
+		
+
+		
+
+<h2 id="quem-é-esse-tal-de-hugo">Quem é esse tal de HUGO?</h2>
+
+<p><img src="https://d33wubrfki0l68.cloudfront.net/30790d6888bd8af863fb2b5c33a7f337cdbda243/4e867/images/hugo-logo-wide.svg" alt="HUGO" /></p>
+
+<p>De acordo com o <a href="https://gohugo.io">site oficial</a> do projeto:</p>
+
+<blockquote>
+<p><em>&ldquo;Hugo é um dos mais populares geradores de sites estáticos de código aberto. Com sua incrível velocidade e flexibilidade, Hugo torna a construção de sites mais divertidos novamente.&rdquo;</em></p>
+</blockquote>
+
+<p>Alguns dos seus benefícios são:</p>
+
+<ul>
+<li>Tempo de construção <em>(build)</em> extremamente baixo (&lt;1 ms por página)</li>
+<li>Multiplataforma</li>
+<li>Suporte nativo a <a href="https://www.markdownguide.org/basic-syntax/"><em>Markdown</em></a></li>
+<li>Suporte integrado ao <em>Google Analytics</em></li>
+</ul>
+
+<p>Pré requisitos de instalação:</p>
+
+<ul>
+<li><a href="https://git-scm.com">Git</a></li>
+<li><a href="https://golang.org">Go</a> (pelo menos a versão 1.11)</li>
+</ul>
+
+<p>Começarei com a instalação de Go, já que utilizo <a href="https://linuxmint.com">Linux Mint 18 - Sarah</a> e já veio com Git instalado por padrão.</p>
+
+<h2 id="instalando-go-no-linux-mint">Instalando GO no Linux Mint</h2>
+
+<p>Atualize seu sistema</p>
+
+<pre><code>$sudo apt-get update -y
+</code></pre>
+
+<p>Baixe os binários para sua versão no <a href="https://golang.org/dl/">site oficial</a></p>
+
+<pre><code>$wget https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz
+</code></pre>
+
+<p>Descompacte o arquivo baixado e instale no local de sua preferência. No meu caso escolhi o diretório <em>/usr/local</em> .</p>
+
+<pre><code>$tar -xvf go1.12.5.linux-amd64.tar.g
+$mv go /usr/local
+</code></pre>
+
+<p>Adicione <em>/usr/local/go/bin</em> à variável de ambiente <strong>PATH</strong>.</p>
+
+<pre><code>$export PATH=$PATH:/usr/local/go/bin
+</code></pre>
+
+<p>E por fim teste se está tudo certo com a instalação</p>
+
+<pre><code>$go version
+go version go1.12.5 linux/amd64
+</code></pre>
+
+<p>Agora sim daremos prosseguimento a instalação do <em>HUGO</em>.</p>
+
+<p>Clonaremos o repósitorio do projeto no <em>Github</em> com a última versão dos pacotes.</p>
+
+<pre><code>mkdir $HOME/src
+cd $HOME/src
+git clone https://github.com/gohugoio/hugo.git
+cd hugo
+go install --tags extended
+</code></pre>
+
+<p>Remova <code>--tags extended</code> se você não precisa do suporte a <em>Sass/SCSS</em>.</p>
+
+<p>Verifique a instalação</p>
+
+<pre><code>$hugo version
+Hugo Static Site Generator v0.55.5-A83256B9 linux/amd64 BuildDate: 2019-05- 02T13:04:07Z
+</code></pre>
+
+<p>Tarefa finalizada!</p>
+
+<p>Por hoje é só. Da próxima vez mostro como criar um projeto básico.</p>
+
+<p><em>Referências:</em></p>
+
+<p><em>The Go Programming Language: Install the Go tools, 2019. Página inicial.
+Disponível em: <a href="https://golang.org/doc/install">https://golang.org/doc/install</a></em></p>
+
+<p><em>HUGO: Install Hugo, 2019. Página inicial.Disponível em: <a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a></em></p>
+
+<p><em>TechAdmin</em>.<em>net:How to Install Go on Linuxmint, 2019. Página inicial.
+Disponível em: <a href="https://tecadmin.net/install-go-on-linuxmint/">https://tecadmin.net/install-go-on-linuxmint/</a></em></p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2019-06-06 11:23:05.3156422 -0300 -03 m=&#43;0.802004601">2019</time> Dev Files. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
