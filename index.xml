@@ -6,10 +6,22 @@
     <description>Recent content on Dev Files</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 06 Jun 2019 11:14:39 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2019 09:28:31 -0300</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Criando Um Novo Site Com Hugo</title>
+      <link>/posts/criando-novo-site-com-hugo/</link>
+      <pubDate>Mon, 10 Jun 2019 09:28:31 -0300</pubDate>
+      
+      <guid>/posts/criando-novo-site-com-hugo/</guid>
+      <description>Criando um novo site com Hugo Como prometido na última postagem, volto para mostrar a criação de um projeto básico com Hugo.
+A sintaxe para criação de um novo site é:
+$hugo new site [path] [flags]  Onde path é o caminho para criação do novo projeto e flags são as opções de criação.
+ --force inicializa em um diretório existente -f, --format string configura o formato dos arquivos de configuracao usados (padrão &amp;quot;toml&amp;quot;) -h, --help ajuda para o site  No nosso caso seguiremos o tutorial de introdução do site do projeto:</description>
+    </item>
     
     <item>
       <title>Instalando e configurando HUGO</title>

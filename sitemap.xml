@@ -3,8 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/criando-novo-site-com-hugo/</loc>
+    <lastmod>2019-06-10T09:28:31-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2019-06-06T11:14:39-03:00</lastmod>
+    <lastmod>2019-06-10T09:28:31-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2019-06-10T09:28:31-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -14,23 +25,12 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2019-06-06T11:14:39-03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/about/</loc>
     <lastmod>2019-05-31T16:29:12-03:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
+    <loc>/categorias/</loc>
     <priority>0</priority>
   </url>
   
