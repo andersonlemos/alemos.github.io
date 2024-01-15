@@ -1,0 +1,86 @@
+baseURL = "/"
+languageCode = "pt-br"
+defaultContentLanguage = "pt"
+
+title = "alemos.dev"
+description = "somente alguém tentando escrever alguma coisa"
+theme = "hugo-blog-awesome"
+enableEmoji = true
+
+[markup]
+[markup.highlight]
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.tableOfContents]
+startLevel = 2  # ToC starts from H2
+endLevel = 4    # ToC ends at H4
+ordered = false # generates <ul> instead of <ol>
+
+[params]
+goToTop = true
+toc = true
+
+[params.browserconfig]
+TileColor = "#2d89ef" # default windows 10 blue tile color
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/andersonlemos"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/o_alemos"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/andersonmlemos/"
+
+[[params.socialIcons]]
+name = "medium"
+url = "https://medium.com/@oalemos"
+[Languages.pt]
+languageName = "Portuguese"
+languageCode = "pt"
+contentDir = "content/pt"
+weight = 1
+
+[Languages.pt.params]
+mainSections = ['posts']
+# Allow to override webmanifest options
+[Languages.pt.params.webmanifest]
+name = "sitename"         # will use "params.sitename" or "title" by default
+short_name = "sitename"   # same as name
+start_url = "/"           # will use homepage url by default
+theme_color = "#434648"   # default is "#434648" (base color of text). Also will override html `<meta name="theme-color" />`
+background_color = "#fff" # by default depend on "params.defaultColor" for "light" or "auto" will be set to "#fff" for dark will be "#131418" (color of dark mode background)
+display = "standalone"
+[Languages.pt.params.author]
+avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
+# Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+intro = "Anderson Lemos"
+name = "alemos.dev"
+description = "Alguém tentando escrever alguma coisa.#Software Developer #Book lover #In love with Tech"
+
+[Languages.pt.menu]
+[[Languages.pt.menu.main]]
+# The page reference (pageRef) is useful for menu highlighting
+# When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
+pageRef = "/"
+name = 'Home'
+url = '/'
+weight = 10
+
+[[Languages.pt.menu.main]]
+pageRef = "posts"
+name = 'Posts'
+url = '/posts/'
+weight = 20
+
+[[Languages.pt.menu.main]]
+pageRef = "about"
+name = 'Sobre'
+url = '/about/'
+weight = 30
